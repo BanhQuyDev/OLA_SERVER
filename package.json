@@ -1,0 +1,27 @@
+{
+  "name": "OLA_2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1112.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.18.0",
+    "socket.io": "^2.3.0",
+    "stripe": "^8.220.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
+  }
+}

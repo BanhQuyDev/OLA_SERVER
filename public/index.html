@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Subscribe to a cool new product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <section>
+      <div class="product">
+      <form action="/api/v1/payment/create-checkout-session" method="POST">
+        <!-- Add a hidden field with the lookup_key of your Price -->
+        <!-- value = 11 memebershipMonth value = 12 membershipQuarter value = 13 membershipYear  -->
+        <input type="hidden" name="lookup_key" value="12" />
+        <button id="checkout-and-portal-button" type="submit">Checkout</button>
+      </form>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
